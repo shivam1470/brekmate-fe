@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-18",
+  "node": "24.19.0",
+  "tests": {
+    "sharedAndStaffAndLocation": 49,
+    "nativeComponents": 6,
+    "browserFlows": 5,
+    "realBackendContracts": 6,
+    "total": 66,
+    "failed": 0
+  },
+  "lint": "passed, no warnings in final check",
+  "typecheck": "both workspaces passed",
+  "builds": {
+    "staffWeb": "passed",
+    "androidJavaScript": "passed",
+    "iosJavaScript": "passed",
+    "signedAABorIPA": "not created"
+  },
+  "artifactBoundaryCheck": "passed: fixture origins/tokens excluded",
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 18,
+    "high": 30,
+    "critical": 0,
+    "total": 48
+  },
+  "securityReleaseGate": "blocked on remaining advisories; see SECURITY.md",
+  "backendIntegrationScope": "actual Fastify services; injected identities and transactional in-memory store",
+  "nativeDeviceE2E": "not executed; Maestro templates only",
+  "liveCognitoAWS": "not executed",
+  "githubCI": "authored, not executed",
+  "storeSubmission": "not performed",
+  "lockfileSha256": "c26712a0e41de9867e17973b7179ce7ddae2e36a57cf934b84c82df1ab782394",
+  "batch": "COD batch 1",
+  "productionReady": false,
+  "releaseReview": "docs/COD_BATCH_REVIEW.md"
+}

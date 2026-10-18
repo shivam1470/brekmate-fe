@@ -1,0 +1,11 @@
+appId: com.brekmate.customer.staging
+---
+- assertTrue: ${TEST_ENV == 'staging'}
+- launchApp
+- tapOn: Celebrate
+- assertVisible: Your people. Your occasion.
+- assertVisible: Up to 20 guests · Free venue · No minimum food order
+- scrollUntilVisible:
+    element: Send celebration enquiry
+    direction: DOWN
+- assertVisible: Send celebration enquiry

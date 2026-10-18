@@ -1,0 +1,22 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test:ui
+> playwright test
+
+[WebServer] (node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[WebServer] (node:44) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:81) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/customer.spec.ts:2:1 › native menu component preview adds an item and obtains a server quote (929ms)
+  ✓  2 e2e/workspace.spec.ts:68:1 › manager can accept an order, kitchen action follows server state (442ms)
+  ✓  3 e2e/workspace.spec.ts:88:1 › rider handoff requires a six-digit code and cash is recorded separately (617ms)
+  ✓  4 e2e/workspace.spec.ts:125:1 › rider navigation excludes manager controls (239ms)
+  ✓  5 e2e/workspace.spec.ts:143:1 › unpaid handoffs stay visible in default queue and Cash due filter (292ms)
+
+  5 passed (4.1s)

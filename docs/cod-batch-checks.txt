@@ -1,0 +1,137 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 check
+> npm run lint && npm run typecheck && npm test && npm run test:native && npm run build:staff && npm run build:mobile && npm run check:artifacts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 lint
+> npm run lint --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 lint
+> expo lint .
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 typecheck
+> tsc -p tsconfig.json --noEmit && npm run typecheck --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /workspace/scratch/4509b6b0c24d/brekmate-fe
+
+
+ Test Files  6 passed (6)
+      Tests  49 passed (49)
+   Start at  08:10:42
+   Duration  1.33s (environment 67%, import 14%, tests 11%, transform 8%, worker 1%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test:native
+> jest --config jest.config.cjs --runInBand
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        1.625 s, estimated 6 s
+Ran all test suites.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 build:staff
+> npm run build --workspace @brekmate/staff
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/staff@0.1.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2638 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                          0.45 kB │ gzip:   0.29 kB
+dist/assets/Bodoni-Bold-65-BNfTp.ttf    58.80 kB
+dist/assets/Lato-Bold-B5iD31kO.ttf      73.33 kB
+dist/assets/Lato-Regular-BwLIet1C.ttf   75.15 kB
+dist/assets/index-BmxLL9gp.css          10.99 kB │ gzip:   3.15 kB
+dist/assets/index-jy8aa2X_.js          487.53 kB │ gzip: 144.09 kB
+
+✓ built in 322ms
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 build:mobile
+> npm run export --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 export
+> expo export --platform android --platform ios --output-dir dist
+
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 13606ms apps/mobile/index.ts (1961 modules)
+iOS Bundled 24994ms apps/mobile/index.ts (2014 modules)
+
+› Assets (36):
+../../assets/fonts/Bodoni-Bold.ttf (59KB)
+../../assets/fonts/Lato-Bold.ttf (73KB)
+../../assets/fonts/Lato-Regular.ttf (75KB)
+node_modules/expo-router/assets/arrow_down.png (9.5KB)
+node_modules/expo-router/assets/arrow_right.xml (307B)
+node_modules/expo-router/assets/checkmark.xml (312B)
+node_modules/expo-router/assets/error.png (469B)
+node_modules/expo-router/assets/file.png (138B)
+node_modules/expo-router/assets/forward.png (188B)
+node_modules/expo-router/assets/pkg.png (364B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.png (653B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon.png (8 variations | 359B)
+node_modules/expo-router/assets/react-navigation/elements/clear-icon.png (4 variations | 425B)
+node_modules/expo-router/assets/react-navigation/elements/close-icon.png (4 variations | 235B)
+node_modules/expo-router/assets/react-navigation/elements/search-icon.png (7 variations | 592B)
+node_modules/expo-router/assets/sitemap.png (465B)
+node_modules/expo-router/assets/unmatched.png (4.8KB)
+
+› android bundles (1):
+_expo/static/js/android/index-90da9efaa27bf356ef7fdc0fa1d9c2fd.hbc (4.4MB)
+
+› ios bundles (1):
+_expo/static/js/ios/index-700029ad28dc1b13c1817d2eb8f9067c.hbc (4.4MB)
+
+› Files (1):
+metadata.json (3.7KB)
+
+Exported: dist
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 check:artifacts
+> node scripts/check-artifacts.mjs
+
+Checked 5 build files: test harness origins/tokens are absent.

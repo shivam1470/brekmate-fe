@@ -1,0 +1,15 @@
+node_modules/
+**/node_modules/
+**/dist/
+.expo/
+**/.expo/
+artifacts/
+test-results/
+coverage/
+.env
+.env.*
+*.log
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
