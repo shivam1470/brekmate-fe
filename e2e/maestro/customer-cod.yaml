@@ -1,0 +1,19 @@
+appId: com.brekmate.customer.staging
+---
+- assertTrue: ${TEST_ENV == 'staging'}
+- launchApp:
+    clearState: true
+- tapOn: Email
+- inputText: ${TEST_EMAIL}
+- tapOn: Password
+- inputText: ${TEST_PASSWORD}
+- tapOn:
+    text: Sign in
+    index: 0
+- assertVisible: Good food. Better breaks.
+- tapOn: ${PRODUCT_NAME}
+- tapOn: Add to basket
+- tapOn: Basket, 1 items
+- assertVisible: Place COD order
+- tapOn: Place COD order
+- assertVisible: A fresh break is on its way.

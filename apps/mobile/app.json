@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "BrekMate",
+    "slug": "brekmate",
+    "version": "0.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "scheme": "brekmate",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brekmate.customer"
+    },
+    "android": {
+      "package": "com.brekmate.customer",
+      "permissions": []
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow BrekMate to find the delivery location you choose.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": false
+        }
+      ]
+    ],
+    "icon": "../../assets/brand/app-icon.png"
+  }
+}

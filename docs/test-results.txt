@@ -1,0 +1,182 @@
+FINAL LOCAL CHECK
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 check
+> npm run lint && npm run typecheck && npm test && npm run test:native && npm run build:staff && npm run build:mobile && npm run check:artifacts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 lint
+> npm run lint --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 lint
+> expo lint .
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 typecheck
+> tsc -p tsconfig.json --noEmit && npm run typecheck --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /workspace/scratch/4509b6b0c24d/brekmate-fe
+
+
+ Test Files  4 passed (4)
+      Tests  39 passed (39)
+   Start at  03:04:07
+   Duration  1.20s (environment 72%, import 14%, tests 9%, transform 4%, worker 1%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test:native
+> jest --config jest.config.cjs --runInBand
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.036 s
+Ran all test suites.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 build:staff
+> npm run build --workspace @brekmate/staff
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/staff@0.1.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2637 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                          0.45 kB │ gzip:   0.29 kB
+dist/assets/Bodoni-Bold-65-BNfTp.ttf    58.80 kB
+dist/assets/Lato-Bold-B5iD31kO.ttf      73.33 kB
+dist/assets/Lato-Regular-BwLIet1C.ttf   75.15 kB
+dist/assets/index-BmxLL9gp.css          10.99 kB │ gzip:   3.15 kB
+dist/assets/index-CM8eJDPx.js          481.00 kB │ gzip: 142.57 kB
+
+✓ built in 226ms
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 build:mobile
+> npm run export --workspace @brekmate/mobile
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/mobile@1.0.0 export
+> expo export --platform android --platform ios --output-dir dist
+
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 12701ms apps/mobile/index.ts (1643 modules)
+iOS Bundled 23209ms apps/mobile/index.ts (2005 modules)
+
+› Assets (36):
+../../assets/fonts/Bodoni-Bold.ttf (59KB)
+../../assets/fonts/Lato-Bold.ttf (73KB)
+../../assets/fonts/Lato-Regular.ttf (75KB)
+node_modules/expo-router/assets/arrow_down.png (9.5KB)
+node_modules/expo-router/assets/arrow_right.xml (307B)
+node_modules/expo-router/assets/checkmark.xml (312B)
+node_modules/expo-router/assets/error.png (469B)
+node_modules/expo-router/assets/file.png (138B)
+node_modules/expo-router/assets/forward.png (188B)
+node_modules/expo-router/assets/pkg.png (364B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.png (653B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon.png (8 variations | 359B)
+node_modules/expo-router/assets/react-navigation/elements/clear-icon.png (4 variations | 425B)
+node_modules/expo-router/assets/react-navigation/elements/close-icon.png (4 variations | 235B)
+node_modules/expo-router/assets/react-navigation/elements/search-icon.png (7 variations | 592B)
+node_modules/expo-router/assets/sitemap.png (465B)
+node_modules/expo-router/assets/unmatched.png (4.8KB)
+
+› android bundles (1):
+_expo/static/js/android/index-c7874a3580c6d17047a9056e5fac54b4.hbc (4.3MB)
+
+› ios bundles (1):
+_expo/static/js/ios/index-1e0ad7105451c20302d8ddf153505efc.hbc (4.3MB)
+
+› Files (1):
+metadata.json (3.7KB)
+
+Exported: dist
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 check:artifacts
+> node scripts/check-artifacts.mjs
+
+Checked 5 build files: test harness origins/tokens are absent.
+
+BROWSER CHECKS (FIXTURE HTTP)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test:ui
+> playwright test
+
+[WebServer] (node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[WebServer] (node:44) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:78) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/customer.spec.ts:2:1 › native menu component preview adds an item and obtains a server quote (991ms)
+  ✓  2 e2e/workspace.spec.ts:68:1 › manager can accept an order, kitchen action follows server state (487ms)
+  ✓  3 e2e/workspace.spec.ts:88:1 › rider handoff requires a six-digit code and cash is recorded separately (682ms)
+  ✓  4 e2e/workspace.spec.ts:121:1 › rider navigation excludes manager controls (343ms)
+
+  4 passed (4.0s)
+
+REAL BACKEND CONTRACT CHECKS (IN-PROCESS)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @brekmate/frontend@0.1.0 test:backend
+> vitest run --config vitest.integration.config.ts
+
+
+ RUN  v5.0.5 /workspace/scratch/4509b6b0c24d/brekmate-fe
+
+(node:248) [FSTDEP023] FastifyDeprecation: disableRequestLogging option is deprecated. Use the logController option with disableRequestLogging or isLogDisabled override instead. The disableRequestLogging top-level option will be removed in `fastify@6`.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:248) [FSTDEP023] FastifyDeprecation: disableRequestLogging option is deprecated. Use the logController option with disableRequestLogging or isLogDisabled override instead. The disableRequestLogging top-level option will be removed in `fastify@6`.
+(node:248) [FSTDEP023] FastifyDeprecation: disableRequestLogging option is deprecated. Use the logController option with disableRequestLogging or isLogDisabled override instead. The disableRequestLogging top-level option will be removed in `fastify@6`.
+(node:248) [FSTDEP023] FastifyDeprecation: disableRequestLogging option is deprecated. Use the logController option with disableRequestLogging or isLogDisabled override instead. The disableRequestLogging top-level option will be removed in `fastify@6`.
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  03:04:06
+   Duration  477ms (import 44%, tests 40%, transform 15%, worker 1%)
+

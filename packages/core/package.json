@@ -1,0 +1,18 @@
+{
+  "name": "@brekmate/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./auth": "./src/auth.ts",
+    "./react": "./src/react.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.7",
+    "aws-amplify": "6.22.2"
+  },
+  "peerDependencies": {
+    "react": "^19.3.0"
+  }
+}

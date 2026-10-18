@@ -1,0 +1,56 @@
+{
+  "name": "@brekmate/frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit && npm run typecheck --workspace @brekmate/mobile",
+    "build:staff": "npm run build --workspace @brekmate/staff",
+    "build:mobile": "npm run export --workspace @brekmate/mobile",
+    "check": "npm run lint && npm run typecheck && npm test && npm run test:native && npm run build:staff && npm run build:mobile && npm run check:artifacts",
+    "dev:staff": "npm run dev --workspace @brekmate/staff",
+    "dev:mobile": "npm run start --workspace @brekmate/mobile",
+    "package": "python3 scripts/package.py",
+    "test:native": "jest --config jest.config.cjs --runInBand",
+    "test:ui": "playwright test",
+    "test:backend": "vitest run --config vitest.integration.config.ts",
+    "format": "prettier --write apps packages test e2e integration scripts *.ts *.json *.cjs docs",
+    "lint": "npm run lint --workspace @brekmate/mobile",
+    "check:artifacts": "node scripts/check-artifacts.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/react-native": "14.1.0",
+    "@testing-library/user-event": "14.6.8",
+    "@types/jest": "30.0.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/react-test-renderer": "19.3.0",
+    "@vitest/coverage-v8": "5.0.5",
+    "jest": "30.5.2",
+    "jest-expo": "58.0.11",
+    "jsdom": "30.1.3",
+    "prettier": "3.9.10",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native-web": "0.21.2",
+    "react-test-renderer": "19.3.0",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "xcode": {
+      "uuid": "11.1.1"
+    }
+  }
+}
